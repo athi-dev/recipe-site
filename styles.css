@@ -1,0 +1,120 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(24, 5%, 18%);
+    line-height: 1.6;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Container */
+  main, aside, header, figure {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 700px;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Header Image */
+  .header-image img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  /* Typography */
+  h1, h2, h3 {
+    color: hsl(24, 5%, 25%);
+    margin-bottom: 0.75rem;
+  }
+  
+  .heading-paragraph {
+    margin-bottom: 1rem;
+    color: hsl(30, 10%, 40%);
+  }
+  
+  /* Preparation Time Section */
+  .preparation-heading {
+    background-color: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .preparation-list {
+    padding-left: 1.5rem;
+    color: hsl(30, 10%, 30%);
+  }
+  
+  .preparation-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Ingredients */
+  .ingredients-list {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ingredients-list li {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 0.4rem 0;
+  }
+  
+  /* Instructions */
+  .instructions-list {
+    list-style-position: inside;
+    counter-reset: step;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .instructions-list li {
+    counter-increment: step;
+    margin-bottom: 1rem;
+  }
+  
+  .instructions-list li::before {
+    content: counter(step) ". ";
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+  }
+  
+  /* Nutrition Table */
+  .nutrition-heading {
+    margin-bottom: 0.5rem;
+  }
+  
+  .nutrition-sentence {
+    margin-bottom: 1rem;
+    color: hsl(30, 10%, 30%);
+  }
+  
+  .nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .nutrition-table th,
+  .nutrition-table td {
+    text-align: left;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+  }
+  
+  .nutrition-table td {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+  }
+  
